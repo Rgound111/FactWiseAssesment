@@ -1,0 +1,269 @@
+.App {
+  margin: 20px 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchBar {
+  position: relative;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+}
+
+.SearchBar input{
+  width: 90% !important;
+  padding: 8px 8px 8px 50px !important;
+}
+
+.search-bar {
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.SearchIcon {
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  top: 5px;
+  left: 10px;
+}
+
+.accordion-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50vw;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-icon {
+  display: flex;
+  width: 100%;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+
+.toggle-icon span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toggle-icon span:nth-child(2) {
+  font-size: 30px;
+  align-self: center;
+  padding: 1px 5px;
+  border-radius: 100%;
+}
+
+.toggle-icon span:nth-child(2):hover {
+  background-color: rgb(213, 213, 213);
+}
+
+.accordion-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.accordion-title {
+  flex-grow: 1;
+}
+
+.accordion-icon {
+  font-size: 24px;
+}
+
+.open .accordion-content {
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.accordion-content p {
+  margin: 5px 0;
+}
+
+button {
+  margin: 5px 10px 5px 0;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:last-child {
+  background-color: #dc3545;
+}
+
+button:last-child:hover {
+  background-color: #c82333;
+}
+
+
+.form-group-one input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.form-actions button {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.enabled {
+  background-color: #28a745;
+  color: white;
+}
+
+button.enabled:hover {
+  background-color: #218838;
+}
+
+button.disabled {
+  background-color: #6c757d;
+  color: white;
+  cursor: not-allowed;
+}
+
+button.disabled:hover {
+  background-color: #6c757d;
+}
+
+button:last-child {
+  background-color: rgb(186, 19, 19);
+}
+
+/* Before click on Edit form  */
+
+.Edit-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions {
+  text-align: end;
+}
+
+
+.edit-form {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.form-group,
+.form-group-two,
+.form-group-three {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-group div,
+.form-group-two div,
+.form-group-three {
+  flex: 1;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.enabled {
+  background-color: #007bff;
+  color: white;
+}
+
+button.disabled {
+  background-color: #ccc;
+  color: #777;
+  cursor: not-allowed;
+}
+
+button:hover:not(.disabled) {
+  background-color: #0056b3;
+}
+
+button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #d32f2f;
+}
